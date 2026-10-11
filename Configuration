@@ -1,0 +1,39 @@
+Réglages principaux
+- `auto-start: false` : démarre la manche automatiquement au lancement du serveur
+- `interval-seconds: 90` : durée de la boss bar entre deux événements (minimum 15 s). Les effets durent cette valeur + 2 s.
+- `effect-duration-seconds: 25` : n'agit pas sur les effets de potion, seulement sur la durée des autres parties d'un événement (météorites, vagues, etc.)
+- `announce-event: true` : annonce l'événement dans le chat
+
+Téléportation `/rtp`
+- `rtp-world: world` : monde utilisé
+- `rtp-radius: 1500` : rayon autour du spawn
+- `rtp-min-distance: 250` : distance minimale par rapport au spawn
+- `rtp-attempts: 30` : nombre d'essais pour trouver un endroit sûr
+
+Événements
+- `meteorite-count: 10` : nombre de météorites
+- `meteorite-explosion-power: 2.6` : puissance des impacts
+- `lightning-strikes: 8` : nombre d'éclairs de l'orage
+- `hostile-mobs-per-player: 1` : nombre de mobs par joueur et par vague (de 1 à 4). Avec 1, une vague de phantoms ne donne qu'un phantom par joueur. Monte à 3 ou 4 pour une vraie nuée.
+- `max-hostile-mobs-per-event: 12` : maximum de mobs au total pour tous les joueurs (de 4 à 32)
+- `max-loot-drops-per-wave: 8` : maximum de paquets de ressources par vague
+
+Pluie de TNT
+- `tnt-rain-count: 12` : nombre de TNT
+- `tnt-fuse-ticks: 70` : délai avant explosion (20 ticks = 1 s)
+- `tnt-yield: 2.0` : puissance de l'explosion
+- `tnt-rain-height: 14` : hauteur de chute
+
+Récompense d'objectif
+- `objective-reward-material: GOLDEN_APPLE` : objet donné
+- `objective-reward-amount: 1` : quantité
+
+Commande `/nopoison`
+- Aucun réglage dans `config.yml`
+- `/nopoison on` : active la protection anti-poison
+- `/nopoison off` : la désactive
+- Permission : `chaostroll.nopoison` (donnée à tout le monde par défaut)
+
+`config-version: 6` ne se modifie pas.
+
+Après une modification, arrête et relance le serveur, puis refais `/chaos start`. L'intervalle n'est lu qu'au démarrage d'une manche.
