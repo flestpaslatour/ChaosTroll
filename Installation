@@ -1,0 +1,7 @@
+Arrête ton serveur Paper.
+Ouvre le dossier plugins/ du serveur.
+Copie ChaosTroll-1_12_1-Paper-26_2.jar dans plugins/.
+Vérifie que le serveur tourne sous Java 21 minimum.
+Redémarre le serveur.
+Regarde la console : tu dois voir ChaosTroll v1.12.1 activé, sans erreur.
+Lance /chaos start, puis vérifie qu’un effet dure jusqu’à la fin de la boss bar.
